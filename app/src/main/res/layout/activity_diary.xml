@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.irfanirfi.facebookapi.Diary"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title"
+        android:layout_margin="6dp"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/title"
+        android:hint="Description/Text"
+        android:inputType="textMultiLine"
+        android:layout_margin="6dp"
+        android:padding="8dp"
+        android:layout_weight="0.36" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/getSharedP"
+        android:layout_below="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Values" />
+
+    <Button
+        android:id="@+id/removeSharedP"
+        android:layout_below="@+id/getSharedP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Values" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
